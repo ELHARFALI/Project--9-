@@ -1,0 +1,102 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    width: 37.5rem;
+    height: 28.125rem;
+    background-color: $White;
+    border-radius: 8px;
+    display: flex;
+                overflow: hidden;
+
+    // align-items: center;
+
+    .image {
+        width: 18.75rem;
+        height: 100%;
+        
+
+        img {
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .text {
+        width: 18.75rem;
+        padding: 2rem;
+
+        .per {
+            font-size: 14px;
+            padding-bottom: 1.8rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: $DarkGrayishBlue;
+        }
+
+        h1 {
+            line-height: 0.9;
+            padding-bottom: 1.8rem;
+        }
+
+        .description {
+            font-size: 14px;
+            line-height: 1.7;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: $DarkGrayishBlue;
+            padding-bottom: 2.5rem;
+        }
+
+        .price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1.8rem;
+
+            .main_price {
+                font-size: 2rem;
+                font-family: 'Fraunces', serif;
+                font-weight: 700;
+                color: $DarkCyan;
+            }
+
+            .second_price {
+                margin-right: 2rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                color: $DarkGrayishBlue;
+            }
+        }
+
+        .btn-shop {
+            width: 100%;
+            background-color: $DarkCyan;
+            text-align: center;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1a4031;
+            }
+
+            .btn {
+                color: $White;
+                text-decoration: none;
+                padding: 1rem 0;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 0.8rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
